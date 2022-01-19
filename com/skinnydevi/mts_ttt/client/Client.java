@@ -1,4 +1,4 @@
-package com.skinnydevi.mtws_ttt.client;
+package com.skinnydevi.mts_ttt.client;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
