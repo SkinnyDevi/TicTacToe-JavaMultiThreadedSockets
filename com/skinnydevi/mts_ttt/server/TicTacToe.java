@@ -109,8 +109,6 @@ public class TicTacToe {
 			}
 		}
 
-		// TODO: FIX WIN ON LAST PLACEMENT == DRAW (CHECK IF FILLED )
-		System.out.println("FILLED AND WON: " + Arrays.toString(hasWinningCombination));
 		if (!hasWinningCombination[0]) {
 			boolean allFilled = true;
 

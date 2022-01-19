@@ -9,7 +9,7 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 
 import java.net.Socket;
-import java.util.Arrays;
+
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -49,7 +49,6 @@ public class GameThread extends Thread {
 						System.out.println("Made servermove and sent gameboard");
 
 						winningTest = game.checkForWinners(true);
-						System.err.println(Arrays.toString(winningTest));
 						winType = !winningTest[0] && winningTest[1] ? "5IT'S A DRAW!" : "5SERVER WINS!";
 
 						if (!winningTest[0] && !(!winningTest[0] && winningTest[1])) outputWriter.write("5" + game.generateBoard());
